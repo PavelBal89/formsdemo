@@ -1,0 +1,113 @@
+.header {
+    background-color: blanchedalmond;
+}
+
+.navbar {
+    background-color: #fff;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px !important;
+    /* 50% of your logo width */
+    display: block;
+}
+
+.about {
+    background-color: rgb(241, 234, 224);
+}
+
+
+#about_text {
+    background-color: #fff;
+
+}
+
+.mk {
+    background-color: #fcefe0;
+}
+
+.card {
+    border: none !important;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+
+/* карусель */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.card-img {
+    padding-right: 20px;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+#recipeCarousel {
+    padding-bottom: 30px;
+}
+
+/* Праздники */
+
+.prazdnik {
+    background-color: rgb(241, 234, 224);
+}
+
+.prazdnik .card-body {
+    background-color: rgb(241, 234, 224);
+
+}
+/* модальное окно*/
+.modal-header {
+    background: #c2b080;
+    color: #fff;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
+
